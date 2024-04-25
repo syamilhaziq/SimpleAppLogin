@@ -6,21 +6,28 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Login App</title>
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
   <h2>Log in to your account</h2>
-  <img src="authentication.png" alt="" height="200px"> 
-  <form>
-    <label for="username">Username:</label>
-    <input type="text" id="username">
+  <img src="authentication.png" alt="" height="200px">
+  <div class ="container">
+    <div class="entryarea">
+      <!-- <label for="username">Username:</label> -->
+      <input type="text" id="username" required>
+      <div class = "label">Username</div>
+    </div>
     <br>
-    <label for="password">Password:</label>
-    <input type="password" id="password">
+    <div class="entryarea">
+      <!-- <label for="password">Password:</label> -->
+      <input type="password" id="password" required>
+      <div class = "label">Password</div>
+    </div>
     <br>
-    <button type="button" onclick="login()">Login</button>
-  </form>
+  </div>
+  <button type="button" onclick="login()">Login</button>
   <p id="result"> </p>
   <script src="script.js"></script>
 </body>
